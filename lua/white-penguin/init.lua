@@ -1,2 +1,2 @@
 require("white-penguin.remap")
-print("hello from white-penguin")
+require("white-penguin.set")
