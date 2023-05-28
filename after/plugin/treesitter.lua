@@ -16,7 +16,10 @@ require'nvim-treesitter.configs'.setup {
   -- parser_install_dir = "/some/path/to/store/parsers", -- Remember to run vim.opt.runtimepath:append("/some/path/to/store/parsers")!
 
   highlight = {
+	ensure_installed = { "markdown" },
     enable = true,
-    additional_vim_regex_highlighting = false,
+	disable = { "latex" },
+	additional_vim_regex_highlighting = { "latex", "markdown" },
+    --additional_vim_regex_highlighting = false,
   },
 }
